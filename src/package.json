@@ -1,0 +1,25 @@
+{
+  "name": "kash-jseval",
+  "version": "0.0.1",
+  "description": "Pruebas con evaluación de expresiones en JS",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.1.1"
+  },
+  "devDependencies": {
+    "style-loader": "0.13.1",
+    "file-loader": "0.9.0",
+    "url-loader": "0.5.7",
+    "webpack": "1.12.14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://kash.visualstudio.com/DefaultCollection/SandBox2/_git/kash-jseval"
+  },
+  "author": "Kash",
+  "license": "ISC"
+}

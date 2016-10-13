@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-sm-12">   
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <!-- <i class="glyphicon glyphicon-eye-open"></i> -->
+                        Evaluador de expresiones JavaScript
+                    </div>
+                    <div class="panel-body">  
+                        <form> 
+                            <div class="form-group">
+                                <label for="expressionInput">Expresi&oacute;n</label>
+                                <textarea id="expressionInput" rows="25" placeholder="Expresi&oacute;n" class="form-control"></textarea>
+                            </div>
+                        </form>
+                        <button id="evalBtn" class="btn btn-primary">Evaluar</button>
+                        <hr />
+                        <div class="form-group">
+                            <label for="resultPadEval">Resultado con eval()</label>
+                            <div id="resultPadEval"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="resultPadNewFunction">Resultado con Function</label>
+                            <div id="resultPadNewFunction"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="dist/bundle.js"></script>
+        <script type="text/javascript" src="edit_area/edit_area_full.js"></script>
+        <script type="text/javascript">
+            editAreaLoader.init({
+                id : "expressionInput"		// textarea id
+                ,syntax: "js"			// syntax to be uses for highgliting
+                ,start_highlight: true		// to display with highlight mode on start-up
+            });
+        </script>
+    </body>
+</html>
