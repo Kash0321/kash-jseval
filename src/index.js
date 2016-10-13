@@ -6,12 +6,19 @@ require("./css/style");
 
 $(function() {
     $('#evalBtn').click(function() {
+        editAreaLoader.execCommand('expressionInput', 'EA_submit');
+        //editAreaLoader.execCommand('expressionInput', 'toggle_on');
+
+        //editAreaLoader.execCommand('expressionInput', 'submit',  null);
+
         withEval();
         withNewFunction();
     });
 });
 
 function withEval() {
+    $('#resultPadEval').html('');
+
     var exp = $('#expressionInput').val();
 
     try {
@@ -24,11 +31,12 @@ function withEval() {
 };
 
 function withNewFunction() {
+    $('#resultPadNewFunction').html('');
+
     var exp = $('#expressionInput').val();
 
     try {
         var fx = new Function(exp);
-        console.log('*** FX --> ' + fx);
         $('#resultPadNewFunction').html(fx);
     }
     catch(err) {
