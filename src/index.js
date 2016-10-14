@@ -5,14 +5,23 @@ require('bootstrap/dist/css/bootstrap-theme');
 require("./css/style");
 
 $(function() {
-    $('#evalBtn').click(function() {
-        editAreaLoader.execCommand('expressionInput', 'EA_submit');
-        //editAreaLoader.execCommand('expressionInput', 'toggle_on');
+    editAreaLoader.init({
+        id : "expressionInput"	    // textarea id
+        ,syntax: "js"			    // syntax to be uses for highgliting
+        ,start_highlight: true	    // to display with highlight mode on start-up
+        ,language: "es"
+        ,replace_tab_by_spaces: 3
+        ,allow_toggle: false
+    });
 
-        //editAreaLoader.execCommand('expressionInput', 'submit',  null);
+    $('#evalBtn').click(function() {
+        editAreaLoader.hide('expressionInput');
+        editAreaLoader.show('expressionInput');
 
         withEval();
         withNewFunction();
+
+        $('#result-dialog').modal();
     });
 });
 

@@ -21,29 +21,34 @@
                             </div>
                         </form>
                         <button id="evalBtn" class="btn btn-primary">Evaluar</button>
-                        <hr />
-                        <div class="form-group">
-                            <label for="resultPadEval">Resultado con eval()</label>
-                            <div id="resultPadEval"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="resultPadNewFunction">Resultado con Function</label>
-                            <div id="resultPadNewFunction"></div>
-                        </div>
+                        <div id="result-dialog" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">Resultados evaluación</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="resultPadEval">Resultado con [eval()]</label>
+                                            <div id="resultPadEval"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="resultPadNewFunction">Resultado con [new Function]</label>
+                                            <div id="resultPadNewFunction"></div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Salir</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="dist/bundle.js"></script>
         <script type="text/javascript" src="edit_area/edit_area_full.js"></script>
-        <script type="text/javascript">
-            editAreaLoader.init({
-                id : "expressionInput"		// textarea id
-                ,syntax: "js"			// syntax to be uses for highgliting
-                ,start_highlight: true		// to display with highlight mode on start-up
-                ,language: "es"
-                ,replace_tab_by_spaces: 3
-            });
-        </script>
+        <script type="text/javascript" src="dist/bundle.js"></script>
     </body>
 </html>
