@@ -26,6 +26,7 @@ Abrir el fichero index.html con el navegador
 Otras referencias
 -----------------
 
-* http://stackoverflow.com/questions/7127652/alternatives-for-javascript-eval
-* https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function
-* https://24ways.org/2005/dont-be-eval/
+*   https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/
+*   http://stackoverflow.com/questions/7127652/alternatives-for-javascript-eval
+*   http://stackoverflow.com/questions/2029888/what-are-the-alternatives-to-eval-in-javascript
+*   https://24ways.org/2005/dont-be-eval/
