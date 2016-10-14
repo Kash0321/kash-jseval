@@ -4,9 +4,11 @@ y pulsando el botón evaluar, interpreta la cadena de texto y muestra el resulta
 
 Ahora mismo hay implementados dos métodos de evaluación:
 
-* Usando el método eval() de javascript
+*   Usando el método eval() de javascript
 
-* Usando la técnica new Function: http://stackoverflow.com/questions/7127652/alternatives-for-javascript-eval
+*   Usando la técnica new Function
+
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function
 
 Instalación
 ------------
@@ -24,5 +26,6 @@ Abrir el fichero index.html con el navegador
 Otras referencias
 -----------------
 
-https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function
-https://24ways.org/2005/dont-be-eval/
+* http://stackoverflow.com/questions/7127652/alternatives-for-javascript-eval
+* https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function
+* https://24ways.org/2005/dont-be-eval/
